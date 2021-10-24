@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "scribes": {
+      "main": "src/scribes/main.mo",
+      "type": "motoko"
+    },
+    "scribes_assets": {
+      "dependencies": [
+        "scribes"
+      ],
+      "frontend": {
+        "entrypoint": "src/scribes_assets/src/index.html"
+      },
+      "source": [
+        "src/scribes_assets/assets",
+        "dist/scribes_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
